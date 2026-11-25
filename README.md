@@ -28,7 +28,7 @@ Node 22 or later, standard library only, no network, deterministic: it writes th
 4. **Tight** — 90–170 characters and 15–30 words reads in one breath; thin or rambling lines lose points.
 5. **Lands** — the ending reframes the opening, so the last words leave something to keep.
 
-The winner was also the winner of a proxy-judge tournament at build time (the same brief, pairwise, both orders, margin 1–5), and the scorer's weights were tuned so it agrees with that tournament. The runner-up lines are in the pool for the same reason the winner is: the scorer, not a hard-coded string, does the picking.
+The winner also won a manual head-to-head bracket at build time (the same brief, judged criterion by criterion), and the scorer's weights were tuned so it agrees with that bracket. A proxy-judge tournament through the local model gateway was attempted first and produced no signal — the upstream model was saturated (HTTP 503 on every call) — so the bracket is the validation. The runner-up lines are in the pool for the same reason the winner is: the scorer, not a hard-coded string, does the picking.
 
 ## Files
 

@@ -10,10 +10,13 @@
 // brief (on subject first, then worth carrying, real voice, tight, lands),
 // ranks the pool at run time and the winner is written out.
 //
-// The scorer is not a coin flip: the winning line was also the winner of a
-// proxy-judge tournament at build time (the same brief, pairwise, both
-// orders), and the weights below were tuned so the scorer agrees with that
-// tournament. See TOURNAMENT.md in the build notes for the full bracket.
+// The scorer is not a coin flip: the winning line also won a manual
+// head-to-head bracket at build time (the same brief, criteria in order),
+// and the weights below were tuned so the scorer agrees with that bracket.
+// A proxy-judge tournament through the local model gateway was attempted
+// first and produced no signal — the upstream model was saturated (HTTP
+// 503 on every call) — so the bracket is the validation. Build notes live
+// in the workdir's TOURNAMENT.md.
 
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
